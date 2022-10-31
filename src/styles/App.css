@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-image: url("../images/portfolio-background.jpg");
+  background-size: cover;
+  height: 100vh;
+  color: whitesmoke;
+}
+
+img {
+  max-width: 100%;
+}
