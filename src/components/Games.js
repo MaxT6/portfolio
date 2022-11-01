@@ -1,4 +1,3 @@
-import "../styles/Games.css";
 import games from "../JSON/games.json";
 // import { Link } from "react-router-dom"
 
