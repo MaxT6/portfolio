@@ -1,4 +1,5 @@
-import "../styles/Games.css"
+import "../styles/Games.css";
+import games from "../JSON/games.json";
 // import { Link } from "react-router-dom"
 
 
@@ -7,11 +8,20 @@ const Games = () => {
     <div className="games">
       <h1>Images of compeleted games to go here</h1>
       <div className="game-images-container">
-        <div className="game-images">
-          {/* <a href="https://github.com/MaxT6/roshambo" target="_blank" rel="noreferrer">
-            <img src={roshamboImage} alt="Roshambo game built with Vue.js showing the three choices: rock, paper, scissors"/>
-          </a> */}
-        </div>
+        {games.map((game)=> {
+          return (
+            <div className="game-card-container" key={game.id}>
+              <div className="game-card">
+                <h2>{game.text}</h2>
+              </div>
+              <a href={game.link} target="_blank" rel="noreferrer">
+                <div className="game-card">
+                  <img src={game.img} alt="list of games and links to the games" />
+                </div>
+              </a>
+            </div>
+          )
+        })}
       </div>
     </div>
   );
