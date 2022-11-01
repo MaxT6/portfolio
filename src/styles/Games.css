@@ -1,4 +1,10 @@
 .games {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+}
+
+.game-images {
+  display: grid;
+  place-items: center;
+  max-width: 30%;
+  max-height: 30%;
 }

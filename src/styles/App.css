@@ -4,7 +4,7 @@
 }
 
 .background {
-  background-image: url("../images/portfolio-background.jpg");
+  background-image: url("../../public/images/portfolio-background.jpg");
   background-size: cover;
   height: 100vh;
   color: whitesmoke;
