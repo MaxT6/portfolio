@@ -6,19 +6,19 @@ import games from "../JSON/games.json";
 const Games = () => {
   return (
     <div className="games">
-      <h1>Images of compeleted games to go here</h1>
+      <h1 className="title">Check out my completed games!</h1>
       <div className="game-images-container">
         {games.map((game)=> {
           return (
             <div className="game-card-container" key={game.id}>
               <div className="game-card">
-                <h2>{game.text}</h2>
+                <h2>{game.txt}</h2>
               </div>
-              <a href={game.link} target="_blank" rel="noreferrer">
                 <div className="game-card">
-                  <img src={game.img} alt="list of games and links to the games" />
+                   <a href={game.link} target="_blank" rel="noreferrer">
+                    <img src={game.img} alt="list of games and links to the games" />
+                    </a>
                 </div>
-              </a>
             </div>
           )
         })}

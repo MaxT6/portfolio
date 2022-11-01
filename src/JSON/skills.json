@@ -1,0 +1,44 @@
+[
+  {
+    "img": "images/icons/react.png",
+    "id": 1,
+    "name": "React",
+    "txt": "My framework of choice. See my completed projects."
+  },
+  {
+    "img": "images/icons/vue.png",
+    "id": 2,
+    "name": "Vue",
+    "txt": "My newest framework. Play my Roshambo game built with Vue."
+  },
+  {
+    "img": "images/icons/javascript.png",
+    "id": 3,
+    "name": "JavaScript",
+    "txt": "My most proficient lanuage."
+  },
+  {
+    "img": "images/icons/node.png",
+    "id": 4,
+    "name": "Node",
+    "txt": "To update."
+  },
+  {
+    "img": "images/icons/sql.png",
+    "id": 5,
+    "name": "SQL",
+    "txt": "To update."
+  },
+  {
+    "img": "images/icons/html5.png",
+    "id": 6,
+    "name": "HTML5",
+    "txt": "My framework of choice. See my completed projects."
+  },
+  {
+    "img": "images/icons/css.png",
+    "id": 7,
+    "name": "CSS",
+    "txt": "To update."
+  }
+]

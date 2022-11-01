@@ -53,9 +53,29 @@ table {
   text-align: center;
 }
 
-.game-images {
-  display: grid;
-  place-items: center;
-  max-width: 30%;
-  max-height: 30%;
+.title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.game-images-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px 15px
+}
+
+.game-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  justify-content: center;
+}
+
+.game-card {
+  color: aliceblue;
+  font-size: 1.5rem;
+  padding-bottom: .75rem;
 }
