@@ -1,7 +1,6 @@
 import Home from "./components/Home"
 import Games from "./components/Games";
 import Navbar from "./components/Navbar";
-import React from "react";
 import "./styles/App.scss"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 

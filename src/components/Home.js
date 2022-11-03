@@ -1,8 +1,13 @@
 import skills from "../JSON/skills.json";
-import headshot from "../assests/headshot.jpg";
-import { useState } from "react";
+import headshot from "../assests/headshot-no-backgroud.png";
+import React, { useState } from "react";
 
 const Home = () => {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
   return (
     <div className="home">
       <header className="header-container">
@@ -72,7 +77,9 @@ const Home = () => {
                     </div>
                 </form>
                 <div className="btn-content">
-                
+                  <button>
+                     Send IT!
+                  </button>
                 </div>
 
             </section>
