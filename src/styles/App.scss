@@ -50,10 +50,9 @@ table {
 /* Above is CSS Reset */
 
 /* Background Image */
-.background {
-  background-image: url("../../public/images/portfolio-background.jpg");
+body {
+  background-image: url("../../public/images/s-fade-bg.jpeg");
   background-size: cover;
-  height: 100vh;
   color: whitesmoke;
 }
 
@@ -71,19 +70,34 @@ img {
 .link {
   color: whitesmoke;
   text-decoration: inherit;
-  font-size: 1.3rem;
+  font-size: 2.3rem;
   
 }
 
 .link:hover {
   color: orange
 }
+/* vvv Header Section */
+.header-container {
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+}
+
+.header-title {
+  font-size: 5rem;
+}
 
 /* vvv Home Page Section vvv */
 
-.home {
+.icons-container {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: grey;
 }
 
 /* vvv Game Section vvv */
@@ -91,7 +105,7 @@ img {
   text-align: center;
 }
 
-.title {
+.games-title {
   font-size: 4rem;
   margin-bottom: 2rem;
 }
