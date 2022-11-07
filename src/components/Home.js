@@ -69,8 +69,10 @@ const Home = () => {
                   <h3>{skill.name}</h3>
                   <span>{skill.txt}</span>
                 </div>
-                <div className="skill-img">
-                  <img src={skill.img} alt="Icons for my coding skills" />
+                <div className="skill-img-container">
+                  <div className="skill-img">
+                    <img src={skill.img} alt="Icons for my coding skills" />
+                  </div>
                 </div>
               </div>
             </div>
