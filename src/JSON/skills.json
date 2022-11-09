@@ -15,19 +15,19 @@
     "img": "images/icons/javascript.png",
     "id": 3,
     "name": "JavaScript",
-    "txt": "My most proficient lanuage."
+    "txt": "My first and most proficient lanuage. I enjoy solving coding challenges in this langauge."
   },
   {
     "img": "images/icons/node.png",
     "id": 4,
     "name": "Node",
-    "txt": "To update."
+    "txt": "To update. To update. To update. To update. To update. To update."
   },
   {
     "img": "images/icons/sql.png",
     "id": 5,
     "name": "SQL",
-    "txt": "To update."
+    "txt": "To update. To update. To update. To update. To update. To update."
   },
   {
     "img": "images/icons/html5.png",
@@ -39,6 +39,6 @@
     "img": "images/icons/css.png",
     "id": 7,
     "name": "CSS",
-    "txt": "To update."
+    "txt": "To update. To update. To update. To update. To update. To update."
   }
 ]

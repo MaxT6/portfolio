@@ -44,12 +44,7 @@ const Home = () => {
         <div className="about-txt-container">
           <h2 className="about-me-title">About Me</h2>
           <p className="about-txt">
-            I grew up on the crime side, the New York Times side Stayin' alive
-            was no jive Had secondhands, Mom's bounced on old man So then we
-            moved to Shaolin land A young youth, yo, rockin' the gold tooth, 'Lo
-            goose Only way I begin the G off was drug loot And let's start it
-            like this, son Rollin' with this one and that one, pullin' out gats
-            for fun
+            I am a former middle school teacher and tutor, seeking to make better tools for helping others learn. A graduate of BloomTech's Full Stack Wed Development course, I seek to build applications that are useful to everyone and especiallay students. I am always looking for my next problem to solve. 
           </p>
         </div>
         <div className="img-container">
@@ -60,7 +55,12 @@ const Home = () => {
           />
         </div>
       </section>
-      <section className="icons-container">
+      <section className="skills-section">
+        <div>
+          <h2 className="skills-title">My Skills</h2>
+        </div>
+      </section>
+      <div className="icons-container">
         {skills.map((skill) => {
           return (
             <div className="skill-card-container" key={skill.id}>
@@ -70,15 +70,13 @@ const Home = () => {
                   <span>{skill.txt}</span>
                 </div>
                 <div className="skill-img-container">
-                  <div className="skill-img">
-                    <img src={skill.img} alt="Icons for my coding skills" />
-                  </div>
+                    <img className="skill-img" src={skill.img} alt="Icons for my coding skills" />
                 </div>
               </div>
             </div>
           );
         })}
-      </section>
+      </div>
       <section className="form">
         <div className="get-in-touch-div">
           <h2 className="get-in-touch">Get In Touch</h2>
@@ -87,7 +85,7 @@ const Home = () => {
           <span className="contact-text">
             I'd love to hear from you about a project or if you're simply just
             curious about something, I'm always available and happy to answer
-            any questions!
+            any questions! 
           </span>
         </div>
         <form className="contact-form">
