@@ -20,25 +20,25 @@
   {
     "img": "images/icons/node.png",
     "id": 4,
-    "name": "Node",
-    "txt": "To update. To update. To update. To update. To update. To update."
+    "name": "Node.js",
+    "txt": "For my backend servers I implement Node.js."
   },
   {
     "img": "images/icons/sql.png",
     "id": 5,
     "name": "SQL",
-    "txt": "To update. To update. To update. To update. To update. To update."
+    "txt": "I have been praciticing my joins to retrieve data from more complex tables"
   },
   {
     "img": "images/icons/html5.png",
     "id": 6,
     "name": "HTML5",
-    "txt": "My framework of choice. See my completed projects."
+    "txt": "Although I primarily code in JSX it all boils down to HTML."
   },
   {
     "img": "images/icons/css.png",
     "id": 7,
     "name": "CSS",
-    "txt": "To update. To update. To update. To update. To update. To update."
+    "txt": "I enjoy trying out new ways of styling using CSS"
   }
 ]
