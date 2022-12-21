@@ -78,7 +78,7 @@ const Home = () => {
         })}
       </div>
       <section className="form">
-        <div className="get-in-touch-div">
+        <div className="get-in-touch-container">
           <h2 className="get-in-touch">Get In Touch</h2>
         </div>
         <div className="contact-text-container">
