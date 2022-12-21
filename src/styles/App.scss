@@ -89,23 +89,40 @@ img {
   align-items: center;
   width: 100%;
   height: 400px;
-  background-color:#d3d3d3
+  background-color:#d3d3d3;
+  @include media-query($small) {
+    // background-color: orange;
+    height: 100px;
+  }
 }
 
 .header-title {
   font-size: 5.2rem;
   font-family: $home-primary;
-}
+  @include media-query($small) {
+    font-size:1.9rem;
+  }
+} 
 
 .header-subtitle {
   font-size: 2.2rem;
   font-family: $home-subtitle;
+  @include media-query($small) {
+    font-size:1.1rem;
+  }
 }
 
 .header-txt-container {
   display: flex;
   align-items: center;
   gap: 35px;
+  @include media-query($small) {
+    // background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
 }
 
 .about-me-container {
@@ -113,6 +130,12 @@ img {
   justify-content: center;
   gap: 100px;
   background-color:#d3d3d3;
+  @include media-query($small) {
+    // background-color: #116399;
+    flex-wrap: wrap;
+    flex-direction:column-reverse;
+    gap:20px;
+  }
 }
 
 .about-txt-container {
@@ -120,7 +143,11 @@ img {
   width: 100%;
   padding: 30px;
   text-align: left;
-  // background-color: red;
+  @include media-query($small) {
+    // background-color: red;
+    padding: 0%;
+    text-align: center;
+  }
 }
 
 .about-me-title {
@@ -129,6 +156,13 @@ img {
   text-align: center;
   margin-bottom: 20px;
   // text-shadow: 3px 3px black;
+  @include media-query($small){
+    background-color:black;
+    width: 100%;
+    color: #d3d3d3;
+    font-size: 1.7rem;
+    margin-bottom: 0px;
+  }
 }
 
 .about-txt {
@@ -137,24 +171,44 @@ img {
   line-height: 4rem;
   font-family: $about-me;
   // text-shadow: 3px 3px black;
+  @include media-query($small){
+    // background-color: #b31b92;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    padding: 5%;
+  }
 }
 
 .img-container {
-  // background-color: lawngreen;
+  @include media-query($small){
+    // background-color: lawngreen;
+    width: 100%;
+  }
   width: 25%;
 }
 
 .headshot {
   margin-top: 60px;
   width: 600px;
-  // background-color: red;
+  // background-color: greenyellow;
   border-radius: 15%;
   -webkit-mask-image: radial-gradient(69% 80% at 50% 50%, black 55%, transparent 80%);
+  @include media-query($small){
+    width: 100px;
+    display: none;
+  }
 }
 
 /********************************************************************** vvv Home Page Section vvv **********************************************************************/
 
 /********************************************************************** vvv Icons Section vvv **********************************************************************/
+
+.skills-section{
+  @include media-query($small){
+    // background-color: #116399;
+    margin-top: 3%;
+  }
+}
 
 .skills-title {
   font-size: 4.5rem;
@@ -164,6 +218,11 @@ img {
   text-shadow: 3px 3px black;
   color: #d3d3d3;
   // background-color: #116399;
+  @include media-query($small){
+    font-size: 2rem;
+    margin: 0px;
+    padding: 5%;
+  }
 }
 
 .icons-container {
@@ -175,6 +234,10 @@ img {
   color: #d3d3d3;
   // background-color: red;
   text-align: center;
+  @include media-query($small){
+    flex-direction: row-reverse;
+    background-color: #116399;
+  }
 }
 
 .skill-card-container {
@@ -184,6 +247,11 @@ img {
   justify-content: center;
   // background-color: orange;
   margin-bottom: 15px;
+  @include media-query($small){
+    // background-color: #38caef;
+    width: auto;
+    margin: 0%;
+  }
 }
 
 // .skill-card {
@@ -207,6 +275,9 @@ img {
   text-align: center;
   background-color: black;
   border: 1px solid gray;
+  @include media-query($small) {
+    display: none;
+  }
 }
 
 .skill-img-container {
@@ -235,10 +306,18 @@ img {
   margin: 0 auto;
   text-align: center;
  position: relative;
+ @include media-query($small) {
+  // background-color: orange;
+  padding: 0%;
+ }
 }
 
 .get-in-touch-container{
   color: #d3d3d3;
+  @include media-query($small) {
+    // background-color: rgb(0, 255, 60);
+    width: 100%;
+   }
 }
 
 .get-in-touch {
@@ -247,6 +326,11 @@ img {
   text-align: center;
   margin: 100px 0px;
   text-shadow: 3px 3px black;
+  @include media-query($small) {
+    // background-color: rgb(212, 53, 93);
+    font-size: 1.7rem;
+    margin: 4% 0% 4% 0%;
+   }
 }
 
 
@@ -269,6 +353,11 @@ img {
   line-height: 3rem;
   text-align: center;
   margin: 50px 0;
+  @include media-query($small) {
+    // background-color: rgb(0, 166, 255);
+    padding: 0% 5% 0% 5%;
+    margin: 4% 0% 4% 0%;
+   }
 }
 
 .contact-form {
@@ -277,7 +366,10 @@ img {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
+  @include media-query($small) {
+    // background-color: rgb(80, 13, 215);
+    width: 100%;
+   }
 }
 
 .input-div {
@@ -286,6 +378,11 @@ img {
   margin-top: 10px;
   width: 100%;
   max-width: 50%;
+  @include media-query($small) {
+    // background-color: rgb(11, 163, 37);
+    padding: 4% 4% 2% 4%;
+    max-width: 80%;
+   }
 }
 
 .input-input {
@@ -346,6 +443,17 @@ img {
   box-shadow: none;
 }
 
+.btn-content {
+  @include media-query($small) {
+    // background-color: rgb(132, 7, 19);
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+    width: 40%;
+   }
+}
+
 button {
   margin-top: 20px;
   font-size: 18px;
@@ -361,6 +469,10 @@ button {
   transition-property: color;
   animation: blink 1s linear infinite;
   text-shadow: rgba(255, 215, 77, 0.6) -1px -1px 6px, rgba(124, 127, 255, 0.6) 1px 1px 6px;
+  @include media-query($small) {
+    margin: 20%;
+    // padding: 8%;
+   }
 }
 
 button:focus,
