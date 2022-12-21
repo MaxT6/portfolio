@@ -157,7 +157,7 @@ img {
   margin-bottom: 20px;
   // text-shadow: 3px 3px black;
   @include media-query($small){
-    background-color:black;
+    background-color: rgb(0, 0, 0);
     width: 100%;
     color: #d3d3d3;
     font-size: 1.7rem;
@@ -236,7 +236,7 @@ img {
   text-align: center;
   @include media-query($small){
     flex-direction: row-reverse;
-    background-color: #116399;
+    background-color: rgba(39, 39, 39, 0.753);
   }
 }
 
