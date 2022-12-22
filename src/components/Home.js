@@ -46,7 +46,7 @@ const Home = () => {
         <div className="about-txt-container">
           <h2 className="about-me-title">About Me</h2>
           <p className="about-txt">
-            I am a graduate of BloomTech's Full Stack Web Development course. As a former middle school teacher, I seek to build applications that help students learn. I enjoy challeneges and am always looking for my next problem to solve. 
+          I am a graduate of BloomTech's Full Stack Web Development course. As a former middle school teacher, I seek to build applications that help students learn. I enjoy challenges and am always looking for my next problem to solve. 
           </p>
         </div>
         <div className="img-container">
