@@ -282,6 +282,32 @@ img {
   }
 }
 
+.skill-name {
+  @include media-query($small) {
+    display: none;
+  }
+}
+
+// .skill-name-small-media {
+//   display: none;
+//   @include media-query($small) {
+//     display: inline;
+//   }
+// }
+
+.skill-name-popup {
+  display: none;
+  @include media-query($small) {
+    display: inline;
+  }
+}
+
+.skill-text-just-text {
+  @include media-query($small) {
+    display: none;
+  }
+}
+
 .skill-img-container {
   // background-color: yellow;
   display: flex;
@@ -543,3 +569,8 @@ button:after {
   padding-bottom: .75rem;
 }
 
+/*************************** vvv Popup Section vvv ***********************************************************************************************************************************/
+
+.popup {
+  position: relative;
+}

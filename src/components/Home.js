@@ -2,12 +2,14 @@ import skills from "../JSON/skills.json";
 import headshot from "../assests/headshot-no-backgroud.png";
 import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import Popup from "./Popup";
 import axios from "axios";
 
 const Home = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [buttonPopup, setButtonPopup] = useState(false)
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -66,11 +68,20 @@ const Home = () => {
             <div className="skill-card-container" key={skill.id}>
               <div className="skill-card">
                 <div className="skill-text">
-                  <h3>{skill.name}</h3>
-                  <span>{skill.txt}</span>
+                  <h3 className="skill-name">{skill.name}</h3>
+                  {/* <h3 className="skill-name-small-media">{skill.name}</h3> */}
+                  <span className="skill-text-just-text">{skill.txt}</span>
                 </div>
-                <div className="skill-img-container">
-                    <img className="skill-img" src={skill.img} alt="Icons for my coding skills" />
+                <div className="icon-buttons" 
+                  onClick={() => {
+                   ( buttonPopup === false ?  setButtonPopup(true) : setButtonPopup (false))
+                  } }> 
+                  <Popup trigger={buttonPopup}>
+                      <h3 className="skill-name-popup">{skill.name}</h3>
+                  </Popup>
+                  <div className="skill-img-container">
+                      <img className="skill-img" src={skill.img} alt="Icons for my coding skills" />
+                  </div>
                 </div>
               </div>
             </div>
