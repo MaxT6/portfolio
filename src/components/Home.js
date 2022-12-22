@@ -51,7 +51,7 @@ const Home = () => {
           <img
             className="headshot"
             src={headshot}
-            alt="The picture of the website's creator. He looks very handsome."
+            alt="The website's creator. He looks very handsome."
           />
         </div>
       </section>
