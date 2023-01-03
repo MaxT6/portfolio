@@ -3,30 +3,6 @@
     "img": "images/roshambo.jpg",
     "txt": "Roshambo",
     "id": 1,
-    "link": "https://github.com/MaxT6/roshambo"
-  },
-  {
-    "img": "images/roshambo.jpg",
-    "txt": "Place Holder 1",
-    "id": 2,
-    "link": "https://github.com/MaxT6/roshambo"
-  },
-  {
-    "img": "images/roshambo.jpg",
-    "txt": "Place Holder 2",
-    "id": 3,
-    "link": "https://github.com/MaxT6/roshambo"
-  },
-  {
-    "img": "images/roshambo.jpg",
-    "txt": "Place Holder 3",
-    "id": 4,
-    "link": "https://github.com/MaxT6/roshambo"
-  },
-  {
-    "img": "images/roshambo.jpg",
-    "txt": "Place Holder 4",
-    "id": 5,
-    "link": "https://github.com/MaxT6/roshambo"
+    "link": "https://roshambo-mt.vercel.app/"
   }
 ]

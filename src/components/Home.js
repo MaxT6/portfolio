@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import Popup from "./Popup";
 import axios from "axios";
+import Games from "./Games";
 
 const Home = () => {
   const [name, setName] = useState("");
@@ -16,7 +17,7 @@ const Home = () => {
     let post = { name: name, email: email, message: message };
     let regEx = /[a-zA-Z0-9._%+-]+@[a-z0-9-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g;
     try {
-        if (name == "" || email == "" || message == "") {
+        if (name === "" || email === "" || message === "") {
             toast.error("Please fill out all fields")
         } else if (!regEx.test(email)) {
             toast.error("Please enter a valid email address")
@@ -88,6 +89,9 @@ const Home = () => {
           );
         })}
       </div>
+      <section>
+        <Games />
+      </section>
       <section className="form">
         <div className="get-in-touch-container">
           <h2 className="get-in-touch">Get In Touch</h2>

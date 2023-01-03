@@ -540,11 +540,18 @@ button:after {
 /********************************************************************** vvv Game Section vvv **********************************************************************/
 .games {
   text-align: center;
+  @include media-query($small) {
+    margin-bottom: 2rem;
+  }
 }
 
 .games-title {
   font-size: 4rem;
   margin-bottom: 2rem;
+  color: #d3d3d3;
+  @include media-query($small) {
+    font-size: 1.5rem;
+  }
 }
 
 .game-images-container{
@@ -564,9 +571,13 @@ button:after {
 }
 
 .game-card {
-  color: aliceblue;
+  color: #d3d3d3;
   font-size: 1.5rem;
   padding-bottom: .75rem;
+}
+
+.game-img {
+  border-radius: 2%;
 }
 
 /*************************** vvv Popup Section vvv ***********************************************************************************************************************************/
