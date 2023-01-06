@@ -1,5 +1,5 @@
 import skills from "../JSON/skills.json";
-import headshot from "../assests/headshot-no-backgroud.png";
+import headshot from "../assests/headshot-no-backgroud.png"; // images accesed this way must be in src
 import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import Popup from "./Popup";
@@ -58,11 +58,12 @@ const Home = () => {
           />
         </div>
       </section>
+      <div></div>
       <section className="skills-section">
         <div>
           <h2 className="skills-title">My Skills</h2>
         </div>
-      </section>
+      
       <div className="icons-container">
         {skills.map((skill) => {
           return (
@@ -89,6 +90,7 @@ const Home = () => {
           );
         })}
       </div>
+      </section>
       <section>
         <Games />
       </section>
