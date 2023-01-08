@@ -5,6 +5,10 @@ import toast, { Toaster } from "react-hot-toast";
 import Popup from "./Popup";
 import axios from "axios";
 import Games from "./Games";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import resume from '../PDF/resume.pdf'
 
 const Home = () => {
   const [name, setName] = useState("");
@@ -42,7 +46,22 @@ const Home = () => {
           <h1 className="header-title">Maximilian Thiel</h1>
           <h2 className="header-subtitle">Full Stack Web Developer</h2>
         </div>
+          <div className="socials">
+            <div className="social-container">
+              <a href="https://github.com/MaxT6" target="_blank" rel="noreferrer"><FontAwesomeIcon className="social-icon" icon={faSquareGithub} /></a>
+              <span className="social-txt">GitHub</span>
+            </div>
+            <div className="social-container">
+              <a href="https://www.linkedin.com/in/maximilianthiel/" target="_blank" rel="noreferrer"><FontAwesomeIcon className="social-icon" icon={faLinkedin} /></a>
+              <span className="social-txt">LinkedIn</span>
+            </div>
+            <div className="social-container">
+              <a href={resume} target="_blank" rel="noreferrer"><FontAwesomeIcon className="social-icon" icon={faFileAlt} /></a>
+              <span className="social-txt">Resume</span>
+            </div>
+          </div>
       </header>
+      <div className="body-container">
       <section className="about-me-container">
         <div className="about-txt-container">
           <h2 className="about-me-title">About Me</h2>
@@ -140,6 +159,7 @@ const Home = () => {
           <button onClick={onSubmit}>Send IT!</button>
         </div>
       </section>
+      </div>
     </div>
   );
 };
