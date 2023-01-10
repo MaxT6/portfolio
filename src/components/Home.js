@@ -8,7 +8,8 @@ import Games from "./Games";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
-import resume from '../PDF/resume.pdf'
+import resume from '../PDF/resume.pdf';
+import Contact from "./Contact";
 
 const Home = () => {
   const [name, setName] = useState("");
@@ -77,7 +78,6 @@ const Home = () => {
           />
         </div>
       </section>
-      <div></div>
       <section className="skills-section">
         <div>
           <h2 className="skills-title">My Skills</h2>
@@ -113,7 +113,7 @@ const Home = () => {
       <section>
         <Games />
       </section>
-      <section className="form">
+      {/* <section className="form">
         <div className="get-in-touch-container">
           <h2 className="get-in-touch">Get In Touch</h2>
         </div>
@@ -158,6 +158,9 @@ const Home = () => {
         <div className="btn-content">
           <button onClick={onSubmit}>Send IT!</button>
         </div>
+      </section> */}
+      <section>
+        <Contact />
       </section>
       </div>
     </div>

@@ -577,7 +577,8 @@ button:after {
 .games {
   text-align: center;
   @include media-query($small) {
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
+    // background-color: white;
   }
 }
 
@@ -587,7 +588,7 @@ button:after {
   margin: 2rem 0rem 2rem 0rem;
   color: #d3d3d3;
   @include media-query($small) {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -621,4 +622,58 @@ button:after {
 
 .popup {
   position: relative;
+}
+
+/*************************** vvv Contact Section vvv ***********************************************************************************************************************************/
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  color:#d3d3d3;
+  // background-color: #116399;
+  @include media-query($small) {
+    height: 200px;
+  }
+}
+
+.contact-title {
+  font-size: 4rem;
+  font-family: $home-primary;
+  margin: 2rem 0rem 2rem 0rem;
+  color: #d3d3d3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // background-color: darkred;
+  @include media-query($small) {
+    margin-top: 0rem;
+    font-size: 2rem;
+  }
+}
+
+.containt-info-container{
+  // background-color: aquamarine;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  @include media-query($small) {
+    // background-color: #116399;
+    width: 85%;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.contact-info{
+  // background-color: lightpink;
+  font-size: 2rem;
+  font-family: $home-primary;
+  color: #d3d3d3;
+  @include media-query($small) {
+    font-size: 1.5rem;
+  }
 }
