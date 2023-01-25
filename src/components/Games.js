@@ -15,7 +15,7 @@ const Games = () => {
               </div>
                 <div className="game-card-specific">
                    <a href={game.link} target="_blank" rel="noreferrer">
-                    <img className="game-img" src={game.img} alt="list of games and links to the games" />
+                    <img className="game-img" src={game.img} alt="list of projects and links to the projects" />
                     </a>
                 </div>
             </div>
