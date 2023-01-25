@@ -598,7 +598,10 @@ button:after {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 50px 15px
+  gap: 50px 15px;
+  @include media-query($small) {
+    gap: 20px 
+  }
 }
 
 .game-card-container {

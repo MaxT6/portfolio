@@ -1,8 +1,20 @@
 [
   {
-    "img": "images/roshambo.jpg",
+    "img": "images/Roshambo.png",
     "txt": "Roshambo",
     "id": 1,
     "link": "https://roshambo-mt.vercel.app/"
+  },
+  {
+    "img": "images/fudes.png",
+    "txt": "Fudes",
+    "id": 2,
+    "link": "https://fudes.vercel.app/"
+  },
+  {
+    "img": "images/explore.png",
+    "txt": "Explore",
+    "id": 3,
+    "link": "https://explore-mt.vercel.app/"
   }
 ]

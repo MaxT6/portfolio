@@ -5,7 +5,7 @@ import games from "../JSON/games.json";
 const Games = () => {
   return (
     <div className="games">
-      <h1 className="games-title">Check out my Roshambo game</h1>
+      <h1 className="games-title">Check Out My Projects</h1>
       <div className="game-images-container">
         {games.map((game)=> {
           return (
