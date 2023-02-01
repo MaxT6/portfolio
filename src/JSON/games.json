@@ -16,5 +16,11 @@
     "txt": "Explore",
     "id": 3,
     "link": "https://explore-mt.vercel.app/"
+  },
+  {
+    "img": "images/Youtube-clone.png",
+    "txt": "Youtube Clone",
+    "id": 4,
+    "link": "https://mt-youtube-clone.vercel.app/"
   }
 ]
