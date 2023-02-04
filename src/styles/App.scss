@@ -609,6 +609,9 @@ button:after {
   flex-wrap: wrap;
   width: 600px;
   justify-content: center;
+  @include media-query($small) {
+    width: 100%;
+  }
 }
 
 .game-card {
@@ -621,6 +624,9 @@ button:after {
   border-radius: 2%;
   height: 320px;
   max-height: 400px;
+  @include media-query($small) {
+    height: auto;
+  }
 }
 
 /*************************** vvv Popup Section vvv ***********************************************************************************************************************************/
